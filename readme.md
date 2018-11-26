@@ -79,7 +79,7 @@ go-getter 是 Go(golang)的一个库,它使用 URL 作为主要输入形式从�
 $ go get github.com/hashicorp/go-getter
 ```
 
-**译者重点提示**: (中国需要代理)，那么你需要添加以下代码到`go.mod`，才能 `get` 库
+**译者重点提示**: (中国需要转成国内链接)，那么你需要添加以下代码到`go.mod`，才能 `get` 库
 
 ```
 replace (
