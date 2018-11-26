@@ -53,7 +53,7 @@ go-getter 是 Go(golang)的一个库,它使用 URL 作为主要输入形式从�
 
 这个库的强大功能，能够使用单个字符串作为输入，从许多不同的源(文件路径,Git,HTTP,Mercurial 等)下载。这能让实现者消除了如何各种来源下载的知识负担。
 
-一个 _探测器(detector)_ 的概念，会自动将无效网址转换为正确的网址。例如:"github.com/hashicorp/go-getter"将变成 Git URL。或者"./foo"会变成文件 URL。而这些都是可扩展的.
+其中， _探测器(detector)_ 的一个概念，会自动将无效网址转换为正确的网址。例如:"github.com/hashicorp/go-getter"将变成 Git URL。或者"./foo"会变成文件 URL。而这些都是可扩展的.
 
 该库使用[Terraform](https://terraform.io)用于下载模块和[Nomad](https://nomadproject.io)用于下载二进制文件.
 
@@ -61,7 +61,6 @@ go-getter 是 Go(golang)的一个库,它使用 URL 作为主要输入形式从�
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 
 - [安装和使用](#%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8)
 - [网址(URL)格式](#%E7%BD%91%E5%9D%80url%E6%A0%BC%E5%BC%8F)
