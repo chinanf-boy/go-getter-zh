@@ -19,10 +19,9 @@
 <!-- repo = 'hashicorp/go-getter' -->
 <!-- commit = '7ee49f69de937ddc17eb72bc669c020b33c364d4' -->
 <!-- time = '2018-11-13' -->
-
-| 翻译的原文 | 与日期        | 最新更新 | 更多                       |
-| ---------- | ------------- | -------- | -------------------------- |
-| [commit]   | ⏰ 2018-11-13 | ![last]  | [中文翻译][translate-list] |
+翻译的原文 | 与日期 | 最新更新 | 更多
+---|---|---|---
+[commit] | ⏰ 2018-11-13 | ![last] | [中文翻译][translate-list]
 
 [last]: https://img.shields.io/github/last-commit/hashicorp/go-getter.svg
 [commit]: https://github.com/hashicorp/go-getter/tree/7ee49f69de937ddc17eb72bc669c020b33c364d4
@@ -149,7 +148,9 @@ github.com/hashicorp/go-getter?ref=abcd1234
 
 ### 子目录
 
-如果只想从下载的目录，下载特定的子目录,可以在双斜杠`//`后指定子目录。go-getter 将首先下载 **在** 双斜杠(如果没有指定双斜杠) _之前_ 指定的 URL ，但，若使用了双斜杠，会将双斜杠后的路径复制到目标目录中。
+如果只想从下载的目录，下载特定的子目录,可以在双斜杠`//`后指定子目录。go-getter 会先下载 **在** 双斜杠(如果没有指定双斜杠) _之前_ 指定的 URL ，在使用了双斜杠之后，会将双斜杠后的路径复制到目标目录中。
+
+> **也就是说，还是要下载完整的项目先，若想只下载子目录，可看[子目录下载方式](http://llever.com/2018/11/28/%E4%B8%8B%E8%BD%BD-github%E9%A1%B9%E7%9B%AE%E5%AD%90%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E5%BC%8F/)**
 
 例如,如果您正在下载此 GitHub 存储库,但您只想下载`test-fixtures`目录,您可以执行以下操作:
 
